@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+    color: #e7ecef;
+}
+nav{
+    height: 55px;
+    width: 100vw;
+    background-color:#274c77;
+    padding-left: 0.5vw;
+    display :flex;
+    align-items: center;
+}
+ul{
+     margin-left: 20px;
+    list-style: none;
+    font-weight: bolder;
+    font-size: larger;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.conatiner{
+    height: 100vh;
+    background-color: #6096ba;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.conatinerbox{
+    
+    display :grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+}
+.box{
+   
+    border-style:solid ;
+    border-width: 3px;
+    font-size: 9vw;
+    font-weight: bolder;
+    font-family: sans-serif;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color:#77a6c5;
+}
+.gameinfo{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boximg img{
+    width: 0px;
+    transition: width 1s ease-in-out ;
+}
+.bt-0{
+    border-top: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.btn{
+   
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: azure;
+    background-color: black;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+}
+@media only screen and (max-width :525px) {
+     .conatiner{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+}
